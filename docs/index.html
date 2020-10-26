@@ -65,6 +65,7 @@
                 duration: 1
             }
         })
+
         tl.from(".anim1", {
                 y: -50,
                 stagger: .6,
@@ -85,6 +86,9 @@
                 opacity: 0
             }, "-=.5")
 
+        document.getElementById('cta').addEventListener('click', () => {
+            tl.reversed() ? tl.play() : tl.reverse();
+        })
             
         
     </script>
